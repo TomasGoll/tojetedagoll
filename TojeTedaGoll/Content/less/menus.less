@@ -87,6 +87,15 @@
 
 
 
+#sidebar-divider{
+    margin: 0 auto;
+
+    @media screen and (max-width: @mobile-l){
+        display: none;
+    }
+}
+
+
 
 #sidebar-img{
     width: 60%;
@@ -98,4 +107,21 @@
 
     }
  
+}
+
+#bottom-img-container{
+    position: absolute;
+    bottom: 0px;
+}
+
+#sidebar-img-bottom{
+    width: 90%;
+
+    @media screen and (max-width: @netbook){
+        width: 60%;
+    }
+
+    @media screen and (max-width: @mobile-l){
+        display: none;
+    }
 }

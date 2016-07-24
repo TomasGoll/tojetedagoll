@@ -14,14 +14,21 @@
         <div class="col-xs-2 col-sm-3 navbar-fixed-top" id="sidebar">
             <div class="container-fluid">
                 <img id="sidebar-img" src="~/Images/WeddingWeb-09.svg" />
+
+                <ul id="sidebar-menu">
+                    <li>@Html.ActionLink("DOMŮ", "Index", null, null)</li>
+                    <li>@Html.ActionLink("O NÁS", "About", null, null)</li>
+                    <li><a href="#">HARMONOGRAM</a></li>
+                    <li><a href="#">SVATEBNÍ DARY</a></li>
+                    <li><a href="#">RSVP</a></li>
+                </ul>
+                
+                    <img class="img-responsive" id="sidebar-divider" src="~/Images/WeddingWeb-15.svg" />
+              
             </div>
-            <ul id="sidebar-menu">
-                <li>@Html.ActionLink("DOMŮ", "Index", null, null)</li>
-                <li>@Html.ActionLink("O NÁS", "About", null, null)</li>
-                <li><a href="#">HARMONOGRAM</a></li>
-                <li><a href="#">SVATEBNÍ DARY</a></li>
-                <li><a href="#">RSVP</a></li>
-            </ul>
+            <div class="container-fluid" id="bottom-img-container">
+                <img class="img-responsive" id="sidebar-img-bottom" src="~/Images/WeddingWeb-10.svg" />
+            </div>
         </div>
     </div>
 
