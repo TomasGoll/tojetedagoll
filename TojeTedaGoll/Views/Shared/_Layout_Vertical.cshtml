@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Wedding Web</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/main.less" rel="stylesheet/less" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/less.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 navbar-fixed-top" id="sidebar">
+            <div class="container-fluid">
+                <img id="sidebar-img" src="~/Images/WeddingWeb-09.svg" />
+            </div>
+            <ul>
+                <li>@Html.ActionLink("DOMŮ", "Index", null, null)</li>
+                <li>@Html.ActionLink("O NÁS", "About", null, null)</li>
+                <li><a href="#">HARMONOGRAM</a></li>
+                <li><a href="#">SVATEBNÍ DARY</a></li>
+                <li><a href="#">RSVP</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer></footer>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

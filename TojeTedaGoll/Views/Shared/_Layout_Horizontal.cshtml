@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Wedding Web</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/main.less" rel="stylesheet/less" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/less.js"></script>
+</head>
+<body>
+    <div class="container-fluid header">
+        <div class="panel" id="header-panel">
+
+            <img class="header-image" src="~/Images/Header-img.png" />
+            <h1>Aneta Raušová <br />&<br />Tomáš Goll</h1>
+            <h2>Dne 9.9.2016 <br />vtančí do společného<br />života</h2>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="nav navbar-default" role="navigation">
+            <!--<div class="container">-->
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", null, new { @class = "menu-item" })</li>
+                <li>@Html.ActionLink("O nás", "About", null, new { @class = "menu-item" })</li>
+                <li>HARMONOGRAM</li>
+                <li>SVATEBNÍ DARY</li>
+                <li>RSVP</li>
+            </ul>
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div class="container-fluid" id="content-container">
+        @RenderBody()
+
+    </div>
+    <footer class="footer-fixed-bottom">
+        <div class="container-fluid  footer">
+            <img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />
+            <div class="panel" id="footer-panel"></div>
+
+        </div>
+    </footer>
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
