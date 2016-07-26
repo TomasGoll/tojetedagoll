@@ -1,2 +1,31 @@
-﻿body {
+﻿@import "../Components/variables.less";
+@import "../Components/content.less";
+
+
+.about-panel{
+        width: 60vw;
+        height: 80vh;
+        background-color: @c-white;
+        padding: 50px;
+        text-align: center;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+     //   border-style: solid;
+     //   border-color: @c-light-brown;
+     //   border-width: 0.5px;
+
+     @media screen and (max-width: @netbook){
+         height: 100vh;
+     }
 }
+
+.img-circle{
+    height: 30%;
+    max-width: 20%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @c-light-brown;
+}
+
