@@ -10,7 +10,7 @@
     <script src="~/Scripts/less.js"></script>
 </head>
 <body>
-    <div class="row">
+    <div class="row" id="flex-row">
         <div class="col-xs-2 col-sm-3 navbar-fixed-top" id="sidebar">
             <div class="container-fluid">
                 <img id="sidebar-img" src="~/Images/WeddingWeb-09.svg" />
@@ -22,18 +22,19 @@
                     <li><a href="#">SVATEBNÍ DARY</a></li>
                     <li><a href="#">RSVP</a></li>
                 </ul>
-                
-                    <img class="img-responsive" id="sidebar-divider" src="~/Images/WeddingWeb-15.svg" />
-              
+
+                <img class="img-responsive" id="sidebar-divider" src="~/Images/WeddingWeb-15.svg" />
+
             </div>
             <div class="container-fluid" id="bottom-img-container">
                 <img class="img-responsive" id="sidebar-img-bottom" src="~/Images/WeddingWeb-10.svg" />
             </div>
         </div>
-    </div>
 
-    <div class="container body-content">
-        @RenderBody()
+
+        <div class="container-fluid body-content">
+            @RenderBody()
+        </div>
     </div>
     <footer></footer>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>

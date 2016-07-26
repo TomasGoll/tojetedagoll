@@ -27,15 +27,17 @@ p{
 
 
 //About page content
-#outer-wrapper{
+
+.body-content{
     text-align: center;
+    margin-left: 15%;
 }
 
 #content{
-    //margin-left: 20%;
-    height: 90vh;
+   
+    height: 95vh;
     background: @c-white;
-    width: 60%;
+    width: 55%;
     position: absolute;
     bottom: 0px;
     padding: 15px;
@@ -44,11 +46,11 @@ p{
     border-width: 1px;
 
         @media screen and (min-width: @netbook){
-            margin-left: 25%;
+            //margin-left: 20%;
         }
 
         @media screen and (min-width: @tablet){
-            margin-left: 35%;
+            margin-left: 25%;
         }
 
         @media screen and (min-width: @desktop){
@@ -64,5 +66,9 @@ p{
             border-right-color: @c-champagne;
             border-right-width: 1px;
             
+        }
+        p{
+            text-align: center;
+            width: 60%;
         }
 }
