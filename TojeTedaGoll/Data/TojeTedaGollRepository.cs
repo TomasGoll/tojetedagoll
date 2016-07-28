@@ -32,6 +32,14 @@ namespace TojeTedaGoll.Data
                 GiftName = "Cash",
                 ShortDescription = "Peníze a zase jen peníze, hodně peněz",
                 FullDescription = "Lorem Ipsum dolor sit Amer",
+            },
+
+            new WeddingGift()
+            {
+                Id = 4,
+                GiftName = "Cesta kolem sveta",
+                ShortDescription = "A kýbl klidu",
+                FullDescription = "Lorem Ipsum dolor sit Amer",
             }
         };
 

@@ -94,6 +94,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\cash.png" />
+    <Content Include="Images\cesta-kolem-sveta.png" />
     <Content Include="Images\Faces.png" />
     <Content Include="Images\Header-bgr.png" />
     <Content Include="Images\Header-img.png" />
