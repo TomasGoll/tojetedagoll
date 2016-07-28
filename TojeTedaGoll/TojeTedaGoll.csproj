@@ -93,9 +93,12 @@
     <Content Include="Content\site.css" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\cash.png" />
     <Content Include="Images\Faces.png" />
     <Content Include="Images\Header-bgr.png" />
     <Content Include="Images\Header-img.png" />
+    <Content Include="Images\matrace.png" />
+    <Content Include="Images\nadobi.png" />
     <Content Include="Images\WeddingWeb-09.svg" />
     <Content Include="Images\WeddingWeb-10.svg" />
     <Content Include="Images\WeddingWeb-11.svg" />
@@ -131,11 +134,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\PagesController.cs" />
-    <Compile Include="Data\GiftRepository.cs" />
+    <Compile Include="Data\TojeTedaGollRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Gift.cs" />
+    <Compile Include="Models\WeddingGift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

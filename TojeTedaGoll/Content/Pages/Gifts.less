@@ -2,5 +2,36 @@
 
 #gifts-info-panel{
     height: 30%;
-    margin-top: -50vh;
+    margin-top: -15vh;
+  
+}
+
+#gifts-items-container{
+    height: 30%;
+    margin-top: 5vh;
+    background: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.gift-item-panel{
+    width: 30%;
+    background-color: @c-white;
+    text-align: center;
+
+        &:hover{
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: @c-light-brown;
+        }
+    
+    &:nth-child(2){
+        margin: 0 auto;
+    }
+    
+    &:nth-chilf(3){
+        margin-right: 0;
+    }
 }
