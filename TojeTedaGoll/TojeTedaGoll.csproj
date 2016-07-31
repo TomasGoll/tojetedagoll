@@ -122,6 +122,7 @@
     <Content Include="Content\Pages\Gifts.less" />
     <Content Include="Content\Pages\Schedule.less" />
     <Content Include="Content\Pages\Rsvp.less" />
+    <Content Include="Content\Components\modal.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -162,7 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Components\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>

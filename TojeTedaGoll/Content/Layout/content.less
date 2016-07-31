@@ -42,6 +42,7 @@ p{
         display: flex;
         flex-flow: column;
         justify-content: center;
+        margin-top: 5%;
 
       
      //   border-style: solid;
@@ -52,17 +53,26 @@ p{
          height: 100vh;
      }
 
-     #gifts-item-container{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    height: 100%;
-    overflow: auto;
-    padding-bottom: 15px;
-}
+         #gifts-item-container{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 15px;
+    }
 }
 
 //Vertical Layout
+//Content panel in second container
+
+.flex-center-verticaly{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    min-height: 1000px;
+}
+
 .vertical-container{
     height: 100%;
     display: flex;
@@ -73,11 +83,8 @@ p{
         background-color: @c-white;
         width: 20%;
         display: block;
-        text-align: center;
-       // border-right-style: solid;
-       //border-right-width: 0.5px;
-       //border-right-color: @c-light-brown; 
-    
+        text-align: center; 
+          
         }
 
 }
@@ -104,23 +111,13 @@ p{
  
 }
 
-#sidebar-bottom-img-container{
-    position: absolute;
-    bottom: 0px;
-}
 
 
 
 
 
-//Content panel in second container
 
-.flex-center-verticaly{
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    min-height: 1000px;
-}
+
 
 
 

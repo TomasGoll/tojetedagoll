@@ -1,11 +1,11 @@
 ﻿@import "../Common/variables.less";
+@import "../Layout/content.less";
+
 
 #gifts-info-panel{
     height: 250px;
     margin: 0 auto;
-    margin-top: 5%;
-    
-  
+    margin-top: 5%; 
 }
 
 #gifts-items-container{
@@ -27,12 +27,21 @@
     text-align: center;
     padding-bottom: 15px;
 
+        a{
+            color:@c-black;
+
+            &:hover{
+                text-decoration: none;
+
+            }
+        }
+
         &:hover{
             border-style: solid;
             border-width: 0.5px;
             border-color: @c-light-brown;
-        }
-    
+         }
+            
     &:nth-child(2){
         margin: 0 auto;
     }
