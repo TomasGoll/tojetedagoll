@@ -13,9 +13,10 @@ namespace TojeTedaGoll.Data
             new WeddingGift()
             {
                 Id = 1,
-                GiftName = "Nadobi",
+                GiftName = "Nádobí",
                 ShortDescription = "Nadobi od firmy XY",
                 FullDescription = "Lorem Ipsum dolor sit Amer",
+                ImagePath = "/Images/nadobi.png"
             },
 
             new WeddingGift()
@@ -24,6 +25,7 @@ namespace TojeTedaGoll.Data
                 GiftName = "Matrace",
                 ShortDescription = "Matrace z IKEI",
                 FullDescription = "Lorem Ipsum dolor sit Amer",
+                ImagePath = "/Images/matrace.png"
             },
 
             new WeddingGift()
@@ -32,6 +34,7 @@ namespace TojeTedaGoll.Data
                 GiftName = "Cash",
                 ShortDescription = "Peníze a zase jen peníze, hodně peněz",
                 FullDescription = "Lorem Ipsum dolor sit Amer",
+                ImagePath = "/Images/cash.png"
             },
 
             new WeddingGift()
@@ -40,6 +43,7 @@ namespace TojeTedaGoll.Data
                 GiftName = "Cesta kolem sveta",
                 ShortDescription = "A kýbl klidu",
                 FullDescription = "Lorem Ipsum dolor sit Amer",
+                ImagePath = "/Images/cesta-kolem-sveta.png"
             }
         };
 

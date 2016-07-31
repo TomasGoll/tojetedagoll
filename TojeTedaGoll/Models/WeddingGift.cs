@@ -11,6 +11,7 @@ namespace TojeTedaGoll.Models
         public string GiftName { get; set; }
         public string ShortDescription { get; set; }
         public string FullDescription { get; set; }
+        public string ImagePath { get; set; }
         public bool Chosen { get; set; }
 
         public string GetGiftName

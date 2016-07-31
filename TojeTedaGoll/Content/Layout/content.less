@@ -1,23 +1,11 @@
-﻿@import "variables.less";
+﻿@import "../Common/variables.less";
 
 
 .container, .container-fluid{
-    @media screen and (min-width: @tablet)
-        {
-        padding: 0;
-        }
+   padding: 0;
+   
 }
 
-
-
-p{
-    font-family: 'Open Sans';
-    font-size: medium;
-    width: 50%;
-    margin: 0 auto;
-    text-align:center;
-    
-}
 
 .page-content-panel{
         width: 60vw;
@@ -36,13 +24,19 @@ p{
      @media screen and (max-width: @netbook){
          height: 100vh;
      }
-}
 
-.gifts-container{
+     #gifts-item-container{
     display: flex;
     flex-flow: row;
     justify-content: center;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 15px;
 }
+}
+
+
+
 
 
 

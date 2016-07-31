@@ -112,11 +112,11 @@
     <Content Include="Images\WeddingWeb-18.svg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\main.less" />
-    <Content Include="Content\Components\variables.less" />
-    <Content Include="Content\Components\menus.less" />
-    <Content Include="Content\Components\header.less" />
-    <Content Include="Content\Components\footer.less" />
-    <Content Include="Content\Components\content.less" />
+    <Content Include="Content\Common\variables.less" />
+    <Content Include="Content\Layout\menus.less" />
+    <Content Include="Content\Layout\header.less" />
+    <Content Include="Content\Layout\footer.less" />
+    <Content Include="Content\Layout\content.less" />
     <Content Include="Content\Pages\Index.less" />
     <Content Include="Content\Pages\About.less" />
     <Content Include="Content\Pages\Gifts.less" />
@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Components\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>
