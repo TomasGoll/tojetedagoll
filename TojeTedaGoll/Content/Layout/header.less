@@ -4,6 +4,28 @@
 
 //Horizontal header
 
+.header{
+   height: 90vh;
+  // background-image: url(/Images/Header-bgr.png);
+   border-bottom: 2px solid @c-champagne;
+   display: flex;
+   flex-flow: row;
+   justify-content: center;
+   padding: 0px;
+    
+   }
+
+
+.panel{
+    background-color: @c-panel;
+    z-index: @z-underneath;
+}
+
+.header-panel-content{
+    z-index: @z-top;
+    opacity: initial;
+}
+
   #header-panel{
         display: flex;
         flex-flow: column;
