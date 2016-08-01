@@ -44,6 +44,24 @@ namespace TojeTedaGoll.Data
                 ShortDescription = "A kýbl klidu",
                 FullDescription = "Lorem Ipsum dolor sit Amer",
                 ImagePath = "/Images/cesta-kolem-sveta.png"
+            },
+
+            new WeddingGift()
+            {
+                Id = 5,
+                GiftName = "Cesta kolem sveta",
+                ShortDescription = "A kýbl klidu",
+                FullDescription = "Lorem Ipsum dolor sit Amer",
+                ImagePath = "/Images/cesta-kolem-sveta.png"
+            },
+
+            new WeddingGift()
+            {
+                Id = 6,
+                GiftName = "Cesta kolem sveta",
+                ShortDescription = "A kýbl klidu",
+                FullDescription = "Lorem Ipsum dolor sit Amer",
+                ImagePath = "/Images/cesta-kolem-sveta.png"
             }
         };
 

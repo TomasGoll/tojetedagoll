@@ -9,24 +9,24 @@
 }
 
 #gifts-items-container{
-    height: 30%;
-    margin-top: 5vh;
+    height: 100%;
     background: none;
     display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding: 0;
-    margin: 0 auto;
-    margin-top: 5%;
+    margin: 0 0 5% auto;
+    z-index: @z-top;
+    position: relative;
+    
 }
 
 .gift-item-panel{
-    width: 30%;
+    margin: 5% 0 0 0;
+    flex: 0 0 30%;
     background-color: @c-white;
     text-align: center;
-    padding-bottom: 15px;
-
+        
         a{
             color:@c-black;
 
@@ -44,16 +44,6 @@
         :visited{
             text-decoration: none;
         }
-            
-    &:nth-child(2){
-        margin: 0 auto;
-    }
-    
-    &:nth-child(3){
-        margin-right: 0;
-    }
 
-    &:last-child{
-        margin-top: 5vh;
-    }
-}
+                       
+ }

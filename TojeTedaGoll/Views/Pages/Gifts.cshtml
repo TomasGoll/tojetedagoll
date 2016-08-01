@@ -22,14 +22,16 @@
             
                 <div class="gift-item-panel">
                     <!--Trigger modal-->
-                    <a href="#" data-toggle="modal" data-target="#giftModal">
+                    
                         <img src=@weddingGift.ImagePath class="img-responsive" />
                         <h1>@weddingGift.GiftName</h1>
                         <p>@weddingGift.ShortDescription</p>
-                    </a>
-                </div>
-            
+                        <hr />
+                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#giftModal">Více</button>
+             
+                </div>            
         }
+
     </div>
     <div class="modal fade" id="giftModal" role="dialog">
         <div class="modal-dialog">
