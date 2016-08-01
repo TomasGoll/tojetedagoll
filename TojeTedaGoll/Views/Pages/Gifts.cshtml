@@ -1,0 +1,60 @@
+﻿@model TojeTedaGoll.Models.WeddingGift[]
+
+@{
+   Layout = "~/Views/Shared/_Layout_Vertical.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div class="page-content-panel" id="gifts-info-panel">
+        <p>Seznam vysněných svatebních darů pro inspiraci</p>
+    </div>
+    <div class="page-content-panel" id="gifts-items-container">
+
+        @foreach (var weddingGift in Model)
+        {
+            
+                <div class="gift-item-panel">
+                    <!--Trigger modal-->
+                    <a href="#" data-toggle="modal" data-target="#giftModal">
+                        <img src=@weddingGift.ImagePath class="img-responsive" />
+                        <h1>@weddingGift.GiftName</h1>
+                        <p>@weddingGift.ShortDescription</p>
+                    </a>
+                </div>
+            
+        }
+    </div>
+    <div class="modal fade" id="giftModal" role="dialog">
+        <div class="modal-dialog">
+            <!--Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1>Gift name</h1>
+
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Zde se bude vypisovat fulldescription text
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Rerzervovat</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                     
+</body>
+
+</html>
