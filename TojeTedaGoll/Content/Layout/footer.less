@@ -1,5 +1,7 @@
 ﻿@import "../Common/variables.less";
 
+
+//Horizontal layout footer
 .footer{
     height: 200px;
     background-image: url(/Images/Header-bgr.png);
@@ -10,4 +12,21 @@
     float: right;
     z-index: @z-over;
     height: 100%;
+}
+
+
+//Vertical layout footer
+
+#footer-container{
+    z-index: @z-top;
+    border-bottom: solid 10px @c-light-brown;   
+
+        #vertical-footer-img{
+             z-index: @z-top;
+             width: 7%;
+                
+             @media screen and (max-width: @tablet){
+                 display: none;
+             }
+        }
 }
