@@ -12,7 +12,12 @@
     <title></title>
 </head>
 <body>
-    <div>
+    <div class="page-content-panel" id="gift-detail-panel">
+        <img src="@Model.ImagePath" alt="@Model.GiftName" class="img-responsive" />
+        <h1>@Model.GiftName</h1>
+        <p>@Model.ShortDescription</p>
+        <p>@Model.FullDescription</p>
+        @Html.ActionLink("Zpět na přehled", "Gifts", null, new { @id = "btn-default"})
     
     </div>
 </body>
