@@ -18,45 +18,16 @@
     <div class="page-content-panel" id="gifts-items-container">
 
         @foreach (var weddingGift in Model)
-        {
-            
-                <div class="gift-item-panel">
-                    <!--Trigger modal-->
-                    
-                        <img src=@weddingGift.ImagePath class="img-responsive" />
-                        <h1>@weddingGift.GiftName</h1>
-                        <p>@weddingGift.ShortDescription</p>
-                        <hr />
-                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#giftModal">Více</button>
-             
-                </div>            
-        }
-
-    </div>
-    <div class="modal fade" id="giftModal" role="dialog">
-        <div class="modal-dialog">
-            <!--Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h1>Gift name</h1>
-
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Zde se bude vypisovat fulldescription text
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Rerzervovat</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
-                </div>
+        {            
+           <div class="gift-item-panel">
+             <a href="@Url.Action("GiftDetail", new { id = weddingGift.Id})">
+                <img src=@weddingGift.ImagePath class="img-responsive" />
+                <h1>@weddingGift.GiftName</h1>
+                <p>@weddingGift.ShortDescription</p>
+            </a>
             </div>
-        </div>
-    </div>
+       }
+   </div>
 
-                     
-</body>
-
+    </body>
 </html>

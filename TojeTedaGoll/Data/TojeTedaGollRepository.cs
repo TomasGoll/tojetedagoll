@@ -69,5 +69,21 @@ namespace TojeTedaGoll.Data
         {
             return _weddingGifts;
         }
+
+        public WeddingGift GetWeddingGift(int id)
+        {
+            WeddingGift weddingGiftToReturn = null;
+
+            foreach (var weddingGift in _weddingGifts)
+            {
+                if (weddingGift.Id == id)
+                {
+                    weddingGiftToReturn = weddingGift;
+                    break;
+                }
+            }
+
+            return weddingGiftToReturn;
+        }
     }
 }

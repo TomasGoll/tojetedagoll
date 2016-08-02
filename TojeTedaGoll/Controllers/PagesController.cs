@@ -32,6 +32,18 @@ namespace TojeTedaGoll.Controllers
             return View(weddinGifts);
         }
 
+        public ActionResult GiftDetail(int? id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+
+            var weddingGift = _tojeTedaGollRepository.GetWeddingGift((int)id);
+
+            return View(weddingGift);
+        }
+
         public ActionResult Schedule()
         {
             return View();
