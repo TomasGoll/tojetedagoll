@@ -39,7 +39,7 @@ namespace TojeTedaGoll.Controllers
                 _db.RsvpForm.Add(GuestToCreate);
                 _db.SaveChanges();
 
-            return RedirectToAction("../Pages/Gifts");
+            return RedirectToAction("../Pages/Index");
         }
 
         // GET: Forms/Edit/5
@@ -50,40 +50,27 @@ namespace TojeTedaGoll.Controllers
 
         // POST: Forms/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit()
         {
-            try
-            {
-                // TODO: Add update logic here
+            return View();
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+
         }
 
-        // GET: Forms/Delete/5
+        // GET: /Movies/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            return View();
+            
+        }
+
+        // POST: /Movies/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
             return View();
         }
-
-        // POST: Forms/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
+    
 }
