@@ -15,7 +15,8 @@ namespace TojeTedaGoll.Controllers
         {
             _tojeTedaGollRepository = new TojeTedaGollRepository();
         }
-               
+
+
         public ActionResult Index()
         {
             return View();
@@ -48,5 +49,7 @@ namespace TojeTedaGoll.Controllers
         {
             return View();
         }
+
+        
     }
 }

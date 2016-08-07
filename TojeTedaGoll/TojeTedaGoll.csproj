@@ -43,11 +43,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -89,6 +96,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\GuestsDB.mdf" />
+    <Content Include="App_Data\GuestsDB_log.ldf">
+      <DependentUpon>GuestsDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\site.css" />
@@ -111,6 +122,16 @@
     <Content Include="Images\WeddingWeb-16.svg" />
     <Content Include="Images\WeddingWeb-17.svg" />
     <Content Include="Images\WeddingWeb-18.svg" />
+    <Content Include="Models\Rsvp.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Rsvp.edmx</DependentUpon>
+      <LastGenOutput>Rsvp.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Rsvp.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Rsvp.edmx</DependentUpon>
+      <LastGenOutput>Rsvp.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\main.less" />
@@ -126,6 +147,13 @@
     <Content Include="Content\Pages\Rsvp.less" />
     <Content Include="Content\Components\modal.less" />
     <Content Include="Content\Pages\GiftDetail.less" />
+    <EntityDeploy Include="Models\Rsvp.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Rsvp.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Rsvp.edmx.diagram">
+      <DependentUpon>Rsvp.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -137,10 +165,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Data\TojeTedaGollRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Guest.cs">
+      <DependentUpon>Rsvp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rsvp.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rsvp.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rsvp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rsvp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rsvp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rsvp.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\WeddingGift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -160,6 +207,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Pages\GiftDetail.cshtml" />
+    <Content Include="Views\Forms\GuestList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -168,8 +216,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Views\Home\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
