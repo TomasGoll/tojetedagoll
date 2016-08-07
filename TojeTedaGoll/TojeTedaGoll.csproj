@@ -144,7 +144,6 @@
     <Content Include="Content\Pages\About.less" />
     <Content Include="Content\Pages\Gifts.less" />
     <Content Include="Content\Pages\Schedule.less" />
-    <Content Include="Content\Pages\Rsvp.less" />
     <Content Include="Content\Components\modal.less" />
     <Content Include="Content\Pages\GiftDetail.less" />
     <EntityDeploy Include="Models\Rsvp.edmx">
@@ -154,6 +153,7 @@
     <Content Include="Models\Rsvp.edmx.diagram">
       <DependentUpon>Rsvp.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\Pages\Rsvp.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -208,6 +208,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Pages\GiftDetail.cshtml" />
     <Content Include="Views\Forms\GuestList.cshtml" />
+    <Content Include="Views\Forms\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

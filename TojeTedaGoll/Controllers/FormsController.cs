@@ -31,18 +31,15 @@ namespace TojeTedaGoll.Controllers
 
         // POST: Forms/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create([Bind(Exclude = "Id")] Guest GuestToCreate)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
+            if(!ModelState.IsValid)
+            
                 return View();
-            }
+                _db.RsvpForm.Add(GuestToCreate);
+                _db.SaveChanges();
+
+            return RedirectToAction("../Pages/Gifts");
         }
 
         // GET: Forms/Edit/5
