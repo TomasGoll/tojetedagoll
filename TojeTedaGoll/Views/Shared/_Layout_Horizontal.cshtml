@@ -5,49 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Wedding Web</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="~/Content/main.less" rel="stylesheet/less" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <script src="~/Scripts/less.js"></script>
 </head>
 <body>
-    <div class="container header">
-        <img class="img-responsive header-side-img" src="~/Images/WeddingWeb-13.svg" />
-        <div class="panel" id="header-panel">
-            <div class="header-panel-content">
-                <img class="header-image" src="~/Images/Header-img.png" />
-                <h1>Aneta Raušová <br />&<br />Tomáš Goll</h1>
-                <h2>Dne 9.9.2016 <br />vtančí do společného<br />života</h2>
-            </div>          
-        <!--TO DO Countdown timer-->
-        </div>
-        <img class="img-responsive header-side-img" src="~/Images/WeddingWeb-12.svg" />
-
-    </div>
-    <div class="container-fluid" id="menu-container">
-        <div class="nav navbar-default navbar-collapse" role="navigation">
-            <!--<div class="container">-->
-            <ul>
-                <li>@Html.ActionLink("DOMŮ", "../Pages/Index", null, new { @class = "menu-item" })</li>
-                <li>@Html.ActionLink("O NÁS", "../Pages/About", null, new { @class = "menu-item" })</li>
-                <li>@Html.ActionLink("HARMONOGRAM", "../Pages/Schedule", null, new { @class = "menu-item" })</li>
-                <li>@Html.ActionLink("SVATEBNÍ DARY", "../Pages/Gifts", null, new { @class = "menu-item" })</li>
-                <li>@Html.ActionLink("RSVP", "../Forms/Create", null, new { @class = "menu-item"})</li>
-            </ul>
-            <!--</div>-->
-        </div>
-    </div>
-
-    <div class="container-fluid horizontal-content-container">
-        @RenderBody()
-
-    </div>
-    <footer class="footer-fixed-bottom">
-        <div class="container-fluid  footer">
-            <img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />
-            <div class="panel" id="footer-panel"></div>
+         <div class="container header">
+            <img class="img-responsive header-side-img" src="~/Images/WeddingWeb-13.svg" />
+            <div class="panel" id="header-panel">
+                <div class="header-panel-content">
+                    <img class="header-image" src="~/Images/Header-img.png" />
+                    <h1>Aneta Raušová <br />&<br />Tomáš Goll</h1>
+                    <h2>Dne 9.9.2016 <br />vtančí do společného<br />života</h2>
+                </div>
+                <!--TO DO Countdown timer-->
+            </div>
+            <img class="img-responsive header-side-img" src="~/Images/WeddingWeb-12.svg" />
 
         </div>
-    </footer>
+        <div class="container-fluid" id="menu-container">
+
+            <div class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("DOMŮ", "../Pages/Index", null, new { @class = "menu-item" })</li>
+                            <li>@Html.ActionLink("O NÁS", "../Pages/About", null, new { @class = "menu-item" })</li>
+                            <li>@Html.ActionLink("HARMONOGRAM", "../Pages/Schedule", null, new { @class = "menu-item" })</li>
+                            <li>@Html.ActionLink("SVATEBNÍ DARY", "../Pages/Gifts", null, new { @class = "menu-item" })</li>
+                            <li>@Html.ActionLink("RSVP", "../Forms/Create", null, new { @class = "menu-item" })</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid horizontal-content-container">
+            @RenderBody()
+
+        </div>
+       <!-- <footer class="footer-fixed-bottom">
+            <div class="container-fluid  footer">
+                <img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />
+                <div class="panel" id="footer-panel"></div>-->
+
+                <footer>
+                    <div class="container-fluid navbar-fixed-bottom" id="footer-container">
+                        <img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />
+                    </div>
+                </footer>
+            
+        
+    
 
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>

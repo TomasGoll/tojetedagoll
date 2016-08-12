@@ -33,7 +33,7 @@ namespace TojeTedaGoll.Controllers
         [HttpPost]
         public ActionResult Create([Bind(Exclude = "Id")] Guest GuestToCreate)
         {
-            if(!ModelState.IsValid)
+           if(!ModelState.IsValid)
             
                 return View();
                 _db.RsvpForm.Add(GuestToCreate);
@@ -44,27 +44,28 @@ namespace TojeTedaGoll.Controllers
 
         // GET: Forms/Edit/5
         public ActionResult Edit(int id)
-        {
+        { 
+
             return View();
         }
 
         // POST: Forms/Edit/5
         [HttpPost]
-        public ActionResult Edit()
+        public ActionResult Edit(int id, Guest GuestToEdit)
         {
             return View();
 
 
         }
 
-        // GET: /Movies/Delete/5
+        // GET: /Forms/Delete
         public ActionResult Delete(int? id)
         {
             return View();
             
         }
 
-        // POST: /Movies/Delete/5
+        // POST: /Forms/Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)

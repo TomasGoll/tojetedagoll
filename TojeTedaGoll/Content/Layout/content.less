@@ -4,7 +4,7 @@
 body{
     background: repeat;
     background-image: url(/Images/Header-bgr.png);
-}
+        }
 
 h1, h2, h3, h4{
     font-family: @amatic;
@@ -23,7 +23,10 @@ p{
 
 .container, .container-fluid{
    padding: 0;
-   
+   @media screen and (max-width: @mobile-l)
+   {
+       margin-right: 0;
+   }
 }
 
 //Horizontal
@@ -49,8 +52,14 @@ p{
      //   border-color: @c-light-brown;
      //   border-width: 0.5px;
 
-     @media screen and (max-width: @netbook){
+     @media screen and (min-width: @mobile-s){
+            padding: 25px 0 15px 0;
+        }
+
+     @media screen and (min-width: @netbook){
          height: 100vh;
+         padding: 50px;
+         
      }
 
          #gifts-item-container{
@@ -87,6 +96,11 @@ p{
             width: 20%;
             display: block;
             text-align: center; 
+
+                @media screen and (max-width: @tablet)
+                {
+                    padding: 20px;
+                }
         
             .sidebar-bottom-img-container{
                     margin-bottom: 0;
@@ -112,7 +126,7 @@ p{
     z-index: @z-top;
     margin: 50px auto;
 
-    @media screen and (max-width: @mobile-l){
+    @media screen and (max-width: @tablet){
         display: none;
 
     }
@@ -133,8 +147,6 @@ p{
             color: @c-black;
         }
 }
-
-
 
 
 

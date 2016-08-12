@@ -36,7 +36,7 @@
           <Property Name="Coming" Type="Boolean" Nullable="false" />
           <Property Name="NotComming" Type="Boolean" Nullable="false" />
           <Property Name="SleepOver" Type="Boolean" Nullable="false" />
-          <Property Name="NumPersons" Type="Int32" Nullable="false" />
+          <Property Name="NumPersons" Type="Int32" Nullable="false" DefaultValue="0" />
           <Property Name="DontSleepOver" Type="Boolean" Nullable="false" />
           <Property Name="YesBowTie" Type="Boolean" Nullable="false" />
           <Property Name="NoBowTie" Type="Boolean" Nullable="false" />

@@ -14,6 +14,11 @@ namespace TojeTedaGoll.Models
     
     public partial class Guest
     {
+        public Guest()
+        {
+            this.NumPersons = 0;
+        }
+    
         public int Id { get; set; }
         public string Name { get; set; }
         public bool Coming { get; set; }
