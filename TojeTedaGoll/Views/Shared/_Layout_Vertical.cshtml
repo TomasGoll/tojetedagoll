@@ -15,12 +15,19 @@
         <div class="sidebar-container">
             <img class="img-responsive" id="sidebar-img" src="~/Images/WeddingWeb-09.svg" />
             <div class="sidebar-menu">
-                <ul>
-                    <li><span class="glyphicon glyphicon-home black" aria-hidden="true" href="#"></span>@Html.ActionLink("DOMŮ", "../Pages/Index", null, "Index", new { @id="hide-this"})</li>
-                    <li><span class="glyphicon glyphicon-comment black" aria-hidden="true"></span>@Html.ActionLink("O NÁS", "../Pages/About", null, "About", new { @id = "hide-this" })</li>
-                    <li><span class="glyphicon glyphicon-list black" aria-hidden="true"></span>@Html.ActionLink("HARMONOGRAM", "../Pages/Schedule", null, "Schedule", new { @id = "hide-this" })</li>
-                    <li><span class="glyphicon glyphicon-gift black" aria-hidden="true"></span>@Html.ActionLink("SVATEBNÍ DARY", "../Pages/Gifts", null, "Gifts", new { @id = "hide-this" })</li>
-                    <li><span class="glyphicon glyphicon-envelope black" aria-hidden="true"></span>@Html.ActionLink("RSVP", "../Forms/Create", null, "Create", new { @id = "hide-this" })</li>
+                <ul id="hide-this">
+                    <li>@Html.ActionLink("DOMŮ", "../Pages/Index", null, "Index")</li>
+                    <li>@Html.ActionLink("O NÁS", "../Pages/About", null, "About")</li>
+                    <li>@Html.ActionLink("HARMONOGRAM", "../Pages/Schedule", null, "Schedule")</li>
+                    <li>@Html.ActionLink("SVATEBNÍ DARY", "../Pages/Gifts", null, "Gifts")</li>
+                    <li>@Html.ActionLink("RSVP", "../Forms/Create", null, "Create")</li>
+                </ul>
+                <ul id="show-this">
+                    <li>@Html.ActionLink(" ", "../Pages/Index", null, "Index", new { @class = "glyphicon glyphicon-home black" })</li>
+                    <li>@Html.ActionLink(" ", "../Pages/About", null, "Index", new { @class = "glyphicon glyphicon-comment black" })</li>
+                    <li>@Html.ActionLink(" ", "../Pages/Schedule", null, "Index", new { @class = "glyphicon glyphicon-list-alt black" })</li>
+                    <li>@Html.ActionLink(" ", "../Pages/Gifts", null, "Index", new { @class = "glyphicon glyphicon-gift black" })</li>
+                    <li>@Html.ActionLink(" ", "../Forms/Create", null, "Index", new { @class = "glyphicon glyphicon-envelope black" })</li>
                 </ul>
                 <img id="sidebar-divider" src="~/Images/WeddingWeb-15.svg" />
             </div>   

@@ -4,25 +4,31 @@
 //Horizontal layout footer
 .footer{
     height: 200px;
-    background-image: url(/Images/Header-bgr.png);
+    //background-image: url(/Images/Header-bgr.png);
     border-bottom: solid 10px @c-light-brown;
 }
 
 #footer-img{
     float: right;
-    z-index: @z-over;
+    z-index: @z-top;
     height: 100%;
+
+        @media screen and (max-width: @netbook)
+        {
+            display: none;
+        }
 }
 
 
 //Vertical layout footer
 
 #footer-container{
-    z-index: @z-above;
+    z-index: @z-top;
     border-bottom: solid 10px @c-light-brown;   
+    float: right;
 
         #vertical-footer-img{
-             z-index: @z-above;
+             z-index: @z-top;
              width: 7%;
                 
              @media screen and (max-width: @tablet){
