@@ -8,15 +8,19 @@
     font-family: 'Amatic SC';
     font-size: 2em;
     font-weight: bold;
-    color: @c-black;
     margin: 0 auto;
     border-bottom: none;
     text-align: center;
-    padding: 25px;  
+    //padding: 25px;  
 
              ul{
-            margin: 0 auto;
+            margin: 0 auto auto 10vw;
             padding: 0px;
+
+            @media screen and (max-width: @netbook)
+            {
+                margin: 0 auto;
+            }
 
             li{
                 list-style-type: none;
@@ -24,7 +28,7 @@
 
                 a{
                     text-decoration: none;
-                    color: @c-black;
+                    color: #777777 !important;
                     
 
                     &:hover{
@@ -45,11 +49,22 @@
 .navbar-collapse{
     text-align: center;
     background-color: @c-white;
+    padding: 20px;
+
+    li{
+        margin-top: 30px;
+    }
+
 }
+
 
 .navbar-nav{
     z-index: @z-top;
-}
+
+ }
+
+
+
 
 .navbar-header{
     text-align: center !important;

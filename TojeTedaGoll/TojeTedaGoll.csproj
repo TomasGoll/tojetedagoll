@@ -110,8 +110,10 @@
     <Content Include="Images\Faces.png" />
     <Content Include="Images\Header-bgr.png" />
     <Content Include="Images\Header-img.png" />
+    <Content Include="Images\kajtra.jpg" />
     <Content Include="Images\matrace.png" />
     <Content Include="Images\nadobi.png" />
+    <Content Include="Images\pekarna.jpg" />
     <Content Include="Images\WeddingWeb-09.svg" />
     <Content Include="Images\WeddingWeb-10.svg" />
     <Content Include="Images\WeddingWeb-11.svg" />
@@ -122,6 +124,7 @@
     <Content Include="Images\WeddingWeb-16.svg" />
     <Content Include="Images\WeddingWeb-17.svg" />
     <Content Include="Images\WeddingWeb-18.svg" />
+    <Content Include="Images\wok.jpg" />
     <Content Include="Models\Rsvp.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Rsvp.edmx</DependentUpon>
@@ -155,7 +158,9 @@
     </Content>
     <Content Include="Content\Pages\Rsvp.less" />
     <Content Include="Content\Components\GuesList.less" />
+    <Content Include="Content\Components\countdown.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\countdown.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\less.js" />

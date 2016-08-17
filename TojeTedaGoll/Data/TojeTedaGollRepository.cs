@@ -13,18 +13,18 @@ namespace TojeTedaGoll.Data
             new WeddingGift()
             {
                 Id = 1,
-                GiftName = "Nádobí",
-                ShortDescription = "Nadobi od firmy XY",
-                FullDescription = "Lorem Ipsum dolor sit Amer",
-                ImagePath = "/Images/nadobi.png"
+                GiftName = "Wok s pokličkou",
+                ShortDescription = "Čínská pánev wok s pokličkou",
+                FullDescription = "Nemusí být přímo z Číny :). Jediným kritériem je ona poklička. Protože bez ní se to fakt nedá.",
+                ImagePath = "/Images/wok.jpg"
             },
 
             new WeddingGift()
             {
                 Id = 2,
                 GiftName = "Matrace",
-                ShortDescription = "Matrace z IKEI",
-                FullDescription = "Lorem Ipsum dolor sit Amer",
+                ShortDescription = "Finanční příspěvek na nové matrace",
+                FullDescription = "Jelikož naše stávající dosluhují, rozhodli jsme se touto formou požádat o příspěvek na nové.",
                 ImagePath = "/Images/matrace.png"
             },
 
@@ -33,26 +33,26 @@ namespace TojeTedaGoll.Data
                 Id = 3,
                 GiftName = "Cash",
                 ShortDescription = "Peníze a zase jen peníze, hodně peněz",
-                FullDescription = "Lorem Ipsum dolor sit Amer",
+                FullDescription = "Jak se to jen píše...aha! Přijmeme darem jakýkoli finanční obnos. Výtežek z této akce půjde na dobročinné účely.",
                 ImagePath = "/Images/cash.png"
             },
 
             new WeddingGift()
             {
                 Id = 4,
-                GiftName = "Cesta kolem sveta",
-                ShortDescription = "A kýbl klidu",
-                FullDescription = "Lorem Ipsum dolor sit Amer",
-                ImagePath = "/Images/cesta-kolem-sveta.png"
+                GiftName = "Domácí pekárna",
+                ShortDescription = "Protože domácí chlebík je nej!",
+                FullDescription = "Ánina vysněná domácí pekárnička. Prý žádné preference ohledně značky a funkcí.",
+                ImagePath = "/Images/pekarna.jpg"
             },
 
             new WeddingGift()
             {
                 Id = 5,
-                GiftName = "Cesta kolem sveta",
-                ShortDescription = "A kýbl klidu",
-                FullDescription = "Lorem Ipsum dolor sit Amer",
-                ImagePath = "/Images/cesta-kolem-sveta.png"
+                GiftName = "Kajtra",
+                ShortDescription = "Náá hradě Okoři...",
+                FullDescription = "...svěěětla už nehoří...",
+                ImagePath = "/Images/kajtra.jpg"
             },
 
             new WeddingGift()

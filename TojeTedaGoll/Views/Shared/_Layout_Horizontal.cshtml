@@ -11,7 +11,9 @@
     <script src="~/Scripts/less.js"></script>
 </head>
 <body>
-         <div class="container header">
+    <div id="page-wrapper" class="container-fluid" style="padding: 0;">
+
+        <div class="container header">
             <img class="img-responsive header-side-img" src="~/Images/WeddingWeb-13.svg" />
             <div class="panel" id="header-panel">
                 <div class="header-panel-content">
@@ -19,7 +21,24 @@
                     <h1>Aneta Raušová <br />&<br />Tomáš Goll</h1>
                     <h2>Dne 9.9.2016 <br />vtančí do společného<br />života</h2>
                 </div>
-                <!--TO DO Countdown timer-->
+                <div id="clockdiv">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
             </div>
             <img class="img-responsive header-side-img" src="~/Images/WeddingWeb-12.svg" />
 
@@ -53,21 +72,21 @@
             @RenderBody()
 
         </div>
-       <!-- <footer class="footer-fixed-bottom">
-            <div class="container-fluid  footer">
-                <img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />
-                <div class="panel" id="footer-panel"></div>-->
+        <!-- <footer class="footer-fixed-bottom">
+             <div class="container-fluid  footer">
+                 <img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />
+                 <div class="panel" id="footer-panel"></div>-->
 
-                <footer>
-                    <div class="container-fluid navbar-fixed-bottom" id="footer-container">
-                        <!--<img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />-->
-                    </div>
-                </footer>
-            
-        
-    
+        <footer>
+            <div class="container-fluid navbar-fixed-bottom" id="footer-container">
+                <!--<img class="img-responsive" id="footer-img" src="~/Images/WeddingWeb-11.svg" />-->
+            </div>
+        </footer>
 
 
+
+    </div>
+    <script src="~/Scripts/countdown.js"></script>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 </body>

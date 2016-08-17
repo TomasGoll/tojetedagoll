@@ -37,7 +37,12 @@
         h1{
             line-height: 80px;
             letter-spacing: 2px;
-            font-size: 4em;            
+            font-size: 4em;  
+            
+            @media screen and (max-width: @netbook)
+            {
+                font-size: 2.5em;
+            }          
          
             
         }
@@ -46,6 +51,11 @@
             line-height: 50px;
             font-weight: bold;
             letter-spacing: 1px;
+
+            @media screen and (max-width: @netbook)
+            {
+                font-size: 1.75em;
+            } 
         }
     }
 
@@ -56,6 +66,11 @@
     z-index: @z-top;
     margin: 0 auto;
     display: block;
+
+    @media screen and (max-width: @netbook)
+    {
+        width: 35%;
+    }
      
 }
 

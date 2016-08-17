@@ -13,12 +13,15 @@
 </head>
 <body>
     <div class="page-content-panel" id="gift-detail-panel">
-        <img src="@Model.ImagePath" alt="@Model.GiftName" class="img-responsive" />
-        <h1>@Model.GiftName</h1>
-        <p>@Model.ShortDescription</p>
-        <p>@Model.FullDescription</p>
-        @Html.ActionLink("Zpět na přehled", "Gifts", null, new { @id = "btn-default"})
-    
+        
+            <img src="@Model.ImagePath" alt="@Model.GiftName" class="img-responsive" />
+        <br />
+            <h1>@Model.GiftName</h1>
+            <p>@Model.ShortDescription</p>
+        <br /><br /><br />
+            <p>@Model.FullDescription</p>
+            @Html.ActionLink("Zpět na přehled", "Gifts", null, new { @id = "btn-default" })
+        
     </div>
 </body>
 </html>
