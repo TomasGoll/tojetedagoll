@@ -60,7 +60,7 @@ namespace TojeTedaGoll.Data
                 Id = 6,
                 GiftName = "Cesta kolem sveta",
                 ShortDescription = "A kýbl klidu",
-                FullDescription = "Lorem Ipsum dolor sit Amer",
+                FullDescription = "",
                 ImagePath = "/Images/cesta-kolem-sveta.png"
             }
         };
