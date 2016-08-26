@@ -13,108 +13,11 @@
     <title>Create</title>
 </head>
 <body>
+    
     <div class="page-content-panel" id="form-panel">
-            @using (Html.BeginForm())
-            {
-                @Html.AntiForgeryToken()
-
-                <div class="form-horizontal">
-                    <h1>RSVP</h1>
-                    <hr />
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Name, "Jméno", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Coming, "Potvrzuji, to si nenechám ujít", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            <div class="checkbox">
-                                @Html.EditorFor(model => model.Coming)
-                                @Html.ValidationMessageFor(model => model.Coming, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.NotComming, "Bohužel mi to nevyjde, ale užijte si to", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            <div class="checkbox">
-                                @Html.EditorFor(model => model.NotComming)
-                                @Html.ValidationMessageFor(model => model.NotComming, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.SleepOver, "Budu chtít přespat", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            <div class="checkbox">
-                                @Html.EditorFor(model => model.SleepOver)
-                                @Html.ValidationMessageFor(model => model.SleepOver, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.NumPersons, "Prosím o zarezervování pokoje pro:", new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            @Html.EditorFor(model => model.NumPersons, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.NumPersons, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.DontSleepOver, "Nějak se dopravím domů", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            <div class="checkbox">
-                                @Html.EditorFor(model => model.DontSleepOver)
-                                @Html.ValidationMessageFor(model => model.DontSleepOver, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.YesBowTie, "Chci být cool, zarezervujte mi prosím motýlka / šik květinu", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            <div class="checkbox">
-                                @Html.EditorFor(model => model.YesBowTie)
-                                @Html.ValidationMessageFor(model => model.YesBowTie, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.NoBowTie, "Díky, ale beru kravatu po dědečkovi / brož po babičce", htmlAttributes: new { @class = "control-label col-md-6" })
-                        <div class="col-md-3">
-                            <div class="checkbox">
-                                @Html.EditorFor(model => model.NoBowTie)
-                                @Html.ValidationMessageFor(model => model.NoBowTie, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr />
-
-                    <div class="form-group">
-                        <div id="submit-btn-group">
-                            <input type="submit" value="Odeslat" class="btn btn-primary" />
-                        </div>
-                    </div>
-                </div>
-            }
-
-      </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJCoi42EpUr2BZIYibopnikvWl9Gm8ycJZwUoxssDL4tr4fQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+   
 
 </body>
 </html>
